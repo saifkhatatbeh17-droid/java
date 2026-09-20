@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+  
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e0e0e0;
+  font-size: 16px;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.info-value {
+  color: #2c3e50;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.status-confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
