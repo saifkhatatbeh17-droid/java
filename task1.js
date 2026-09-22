@@ -52,13 +52,11 @@ if (age < 16) {
 
     alert("Order Status: " + orderStatus);
 }
-
 console.log("Customer Name: " + userName);
 console.log("Age: " + age);
 console.log("Gender: " + gender);
 console.log("Order: " + (order ? order : "N/A"));
 console.log("Order Status: " + orderStatus);
-
 
 let statusClass = "status-warning";
 if (orderStatus === "Order confirmed") {
@@ -66,9 +64,8 @@ if (orderStatus === "Order confirmed") {
 } else if (age < 16) {
     statusClass = "status-error";
 }
-
 document.write('<div class="card">');
-document.write('  <h2>|شاورمجي</h2>');
+document.write('  <h2> ordar </h2>');
 document.write('  <div class="info-item"><span class="info-label"> </span><span class="info-value">' + userName + '</span></div>');
 document.write('  <div class="info-item"><span class="info-label"> </span><span class="info-value">' + age + '</span></div>');
 document.write('  <div class="info-item"><span class="info-label"> </span><span class="info-value">' + gender + '</span></div>');
