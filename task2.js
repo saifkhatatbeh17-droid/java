@@ -13,17 +13,18 @@ function showMenu() {
 }
 
 function findFood(foodName) {
+  let found = null;
   for (let i in menu) {
     if (!menu[i].available) {
       continue;
     }
     if (menu[i].name.toLowerCase() === foodName.toLowerCase()) {
-      return menu[i];
+      found = menu[i];
+      break;
     }
   }
-  return null;
+  return found;
 }
-
 function displayOrder(food, quantity) {
   document.write("<h3>Your Order:</h3>");
   for (let key in food) {

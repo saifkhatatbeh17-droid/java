@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Change imge bord</title>
+    <title>Change image border</title>
 </head>
 
 <body>
+<style>
+    #image {
+        border: 2px solid #000;
+        height:500px;
+        width:500px;
+        animation: rotate 5s linear infinite;
+    }
+    section {
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        font-size: 20px;
+        margin:10px;
+        padding:10px;
+        border: 5px solid #000;
+        
+    }
+    
 
-    <h1>Change Image bordar</h1>
+</style>
+<section>
+    <h1>Change Image border</h1>
 
     <img id="image" src="images.jpg" width="120" height="120">
 
@@ -14,6 +37,7 @@
 
     <button id="circle">make Circle</button>
     <button id="square">make Square</button>
+    </section>
 
     <script src="task5.js"></script>
 

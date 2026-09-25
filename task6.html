@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Ordering System</title>
+</head>
+<body>
+
+    <h2>Restaurant Ordering System</h2>
+
+    <form id="orderForm">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br>
+        <span id="usernameError"></span><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br>
+        <span id="passwordError"></span><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="text" id="phone"><br>
+        <span id="phoneError"></span><br><br>
+
+        <label>Order:</label><br>
+        <select id="order">
+            <option value="">-- Select your order --</option>
+            <option value="Burger">Burger</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Shawarma">Shawarma</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Salad">Salad</option>
+        </select><br>
+        <span id="orderError"></span><br><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <hr>
+
+    <div id="result" style="display:none;">
+        <p id="welcomeMsg"></p>
+        <p id="savedOrderMsg"></p>
+        <p id="savedUsernameMsg"></p>
+    </div>
+
+    <script src="task6.js"></script>
+</body>
+</html>

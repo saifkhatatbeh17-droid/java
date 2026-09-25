@@ -1,4 +1,4 @@
-let userName = prompt("(Enter your Name):");
+let userName=promt("Enter your name;");
 let age = prompt("(Enter your Age):");
 let gender = prompt("(male / female):");
 

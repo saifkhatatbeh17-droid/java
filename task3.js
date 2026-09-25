@@ -1,17 +1,12 @@
-function reverseNumber(x) {
-            let reversed = 0;
-            while (x > 0) {
-                reversed = reversed * 10 + (x % 10);
-                x = Math.floor(x / 10);
-            }
-            return reversed;
-        }
+let str = "532443";
+let reversed = "";
 
-        document.write("<h2>Q1: Reverse Number</h2>");
-        document.write("Input: 532443 <br>");
-        document.write("Output: " + reverseNumber(532443) + "<br><br>");
+for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+}
 
-        document.write("<h2>Q2: Even or Odd (0-15)</h2>");
+document.write(reversed);
+
         for (let i = 0; i <= 15; i++) {
             if (i % 2 === 0) {
                 document.write(i + " is even<br>");
